@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Henrique Lopes</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Henrique Lopes</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile1.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Henrique Lopes</h1>
+        <p class="section__text__p2"> Physical Engineer · Interactive Tecnologies </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/cv1.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https:www.linkedin.com/in/henrique-lopes-643357316'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/henrique99sl'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+      
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/inesc-tec-logo.png" alt="INESC TEC logo" class="icon" />
+              <h3>INESC TEC</h3>
+              <p>1 year<br />Intern Researcher</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/um.png" alt="University of Minho logo" class="icon" />
+              <h3>University of Minho</h3>
+              <p>B.Sc. in Physical Engineering</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/logo-feup.jpg" alt="FEUP logo" class="icon" />
+              <h3>FEUP</h3>
+              <p>M.Sc. in Multimedia Engineering</p>
+            </div>
+            
+          </div>
+          <div class="text-container">
+            <p>
+              <p>
+                I'm a Master's student in Multimedia Engineering at FEUP, with a bachelor's degree in Physical Engineering from the University of Minho. 
+                My main interests include virtual reality, artificial intelligence, robotics and automation, scientific modeling and simulation, 
+                software engineering, and financial technology. I have conducted research at INESC TEC, focusing on VR dialogue systems for older adults, 
+                and I am deeply interested in the social impact of immersive technologies.
+              </p>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#skills'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article><img src="./assets/python1.webp" class="icon" alt="Python" /><h3>Python</h3></article>
+              <article><img src="./assets/uml.png" class="icon" alt="UML" /><h3>UML</h3></article>
+          <article><img src="./assets/html.jpg" class="icon" alt="HTML" /><h3>HTML</h3></article>
+          <article><img src="./assets/php.png" class="icon" alt="PHP" /><h3>PHP</h3></article>
+          <article><img src="./assets/javascript.png" class="icon" alt="JavaScript" /><h3>JavaScript</h3></article>
+          <article><img src="./assets/tina.png" class="icon" alt="TINA" /><h3>TINA</h3></article>
+          <article><img src="./assets/puredata.png" class="icon" alt="Pure Data" /><h3>Pure Data</h3></article>
+          <article><img src="./assets/css.png" class="icon" alt="CSS" /><h3>CSS</h3></article>
+          <article><img src="./assets/csharp.png" class="icon" alt="C#" /><h3>C#</h3></article>
+          <article><img src="./assets/assembly.png" class="icon" alt="Assembly" /><h3>Assembly</h3></article>
+          <article><img src="./assets/c.png" class="icon" alt="C" /><h3>C</h3></article>
+          <article><img src="./assets/cpp.png" class="icon" alt="C++" /><h3>C++</h3></article>
+          <article><img src="./assets/haskell.jpg" class="icon" alt="Haskell" /><h3>Haskell</h3></article>
+          <article><img src="./assets/vs.jpeg" class="icon" alt="VS Code" /><h3>VS Code</h3></article>
+          <article><img src="./assets/unity.jpeg" class="icon" alt="Unity 3D" /><h3>Unity 3D</h3></article>
+          <article><img src="./assets/azure.png" class="icon" alt="Azure" /><h3>Azure</h3></article>
+          <article><img src="./assets/gpt.jpg" class="icon" alt="GPT" /><h3>GPT</h3></article>
+          <article><img src="./assets/react.png" class="icon" alt="React.js" /><h3>React.js</h3></article>
+          <article><img src="./assets/json.png" class="icon" alt="JSON" /><h3>JSON</h3></article>
+          <article><img src="./assets/sql.png" class="icon" alt="SQL" /><h3>SQL</h3></article>
+          <article><img src="./assets/reaper.png" class="icon" alt="Reaper" /><h3>Reaper</h3></article>
+          <article><img src="./assets/simulink.png" class="icon" alt="Simulink" /><h3>Simulink</h3></article>
+          <article><img src="./assets/qutip.png" class="icon" alt="QuTiP" /><h3>QuTiP</h3></article>
+          <article><img src="./assets/labview.png" class="icon" alt="LabVIEW" /><h3>LabVIEW</h3></article>
+            </div>
+          </div>
+          
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+    
+      <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding: 20px;">
+    
+        <!-- Project 1 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Fall Detection with PIC and MATLAB</h2>
+          <p>A system developed with PIC18F47Q10 and accelerometers to detect falls, communicate via EUSART and MATLAB, and display real-time results.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/advencedinstrumentation.pdf')">Download PDF</button>
+          </div>
+        </div>
+    
+        <!-- Project 2 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">StoryShow: Interactive Content Platform</h2>
+          <video autoplay muted loop controls style="width: 100%; margin: 10px 0;"><source src="./assets/website.mp4" type="video/mp4"></video>
+          <p>Platform to explore and recommend media, using JavaScript, PHP, MySQL. Includes filtering, auth, and recommendation logic.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/apresentacaoWebsite.pdf')">Download PDF</button>
+          </div>
+        </div>
+    
+        <!-- Project 3 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">VR Dialogue Moderator for Older Adults</h2>
+          <video autoplay loop muted controls style="width: 100%; margin: 10px 0;"><source src="./assets/moderator.mov" type="video/mp4"></video>
+          <p>AI moderator for VR group conversations using GPT-4, Unity, Python, Google STT, Azure TTS. Enhances engagement and reduces loneliness.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/presentation.pdf')">Download PDF</button>
+          </div>
+        </div>
+    
+        <!-- Project 4 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Scoping Review: VR & Loneliness</h2>
+          <p>Review of qualitative and quantitative studies on how social VR can mitigate loneliness in older adults. Focus on usability, ethics, and well-being.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/scoping-review.pdf')">Download PDF</button>
+          </div>
+        </div>
+    
+        <!-- Project 5 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Emotion Detection with p5.js & FaceMesh</h2>
+          <video autoplay muted loop playsinline style="width: 100%; margin: 10px 0;"><source src="./assets/emotion-detection.mp4" type="video/mp4"></video>
+          <p>Real-time emotion detection through facial landmark analysis using p5.js and MediaPipe FaceMesh.</p>
+        </div>
+    
+        <!-- Project 6 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Image Sonification with p5.js</h2>
+          <video autoplay loop muted controls style="width: 100%; margin: 10px 0;"><source src="./assets/image-sonification.mp4" type="video/mp4"></video>
+          <p>Converts images into audio using Gaussian-based analysis and p5.js. Maps color to sound for audiovisual interaction.</p>
+        </div>
+    
+        <!-- Project 7 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">MASHUP – Musical Fusion in Pure Data</h2>
+          <video autoplay loop muted controls style="width: 100%; margin: 10px 0;"><source src="./assets/DEMO.mp4" type="video/mp4"></video>
+          <p>Musical mashup interface using FM synthesis in Pure Data. Real-time controls and expressive sound blending.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/finalreport.pdf')">Download PDF</button>
+          </div>
+        </div>
+    
+        <!-- Project 8 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Digital Media & Network Society</h2>
+          <p>Two analyses on influencer monetization and transmedia storytelling. Focused on Castells' Network Society theory and Marvel Universe case study.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/Influencers_in_the_Network_Society__Monetization_Strategies_Across_Social_Media_Platforms.pdf')">Download PDF – Influencers</button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/TransmediaStorytelling.pdf')">Download PDF – Transmedia</button>
+          </div>
+        </div>
+    
+        <!-- Project 9 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Control System Modeling with Simulink</h2>
+          <p>Thermal system modeled with MATLAB & Simulink. Includes ON/OFF and PID controllers, transfer functions, and real data validation.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/Teoria_do_Controlo.pdf')">Download PDF</button>
+          </div>
+        </div>
+    
+        <!-- Project 10 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Target Shooting in C</h2>
+          <img src="./assets/targetshooting.png" alt="Target Shooting Preview" style="width: 100%; margin: 10px 0;">
+          <p>Projectile simulation game using C with real-time trajectory and scoring. Implements air resistance, input physics, and console interaction.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/targetshooting.pdf')">Download PDF</button>
+          </div>
+        </div>
+    
+        <!-- Additional PDF Projects -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Color Space & Image Similarity – ANS</h2>
+          <p>Image analysis using MATLAB & Python. Histogram comparison, color space conversion, and similarity metrics.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/ans.pdf')">Download PDF</button>
+          </div>
+        </div>
+    
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">UML Specifications – SafeGuard</h2>
+          <p>Complete UML documentation for a disaster alert system: use case, class, sequence, activity, component, and deployment diagrams.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/UML_specifications.pdf')">Download PDF</button>
+          </div>
+        </div>
+    
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Traffic Light System – UPPAAL</h2>
+          <p>Cyber-physical modeling of smart traffic lights using UPPAAL. Includes logic for adaptive traffic control.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/Relatório_de_Computação_Ciber_Física.pdf')">Download PDF</button>
+          </div>
+        </div>
+    
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Experimental Electronics Reports</h2>
+          <p>Multiple reports on circuit theory, AC/DC behavior, TINA simulations, and measurement comparisons.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/eletronics.pdf')">Download PDF</button>
+          </div>
+        </div>
+    
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Fundamentals of Mechanics – Lab Reports</h2>
+          <p>Reports covering motion experiments: inclined plane, oscillations, Atwood machine, and kinematics.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/mechanics.pdf')">Download PDF</button>
+          </div>
+        </div>
+    
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Quantum Mechanics – Exercises</h2>
+          <p>Solutions and derivations of quantum problems: commutators, wavefunctions, potential wells, Schrödinger equation.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/quantummechanics.pdf')">Download PDF</button>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    
+      
+    
+      
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:henriqueslopes99@gmail.com">henriqueslopes99@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/henrique-lopes-643357316/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone2.png"
+            alt="Phone icon"
+            class="icon contact-icon"
+          />
+          <p><a href="tel:+351916547658">+351 916 547 568</a></p>
+        </div>
+      </div>
+      
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

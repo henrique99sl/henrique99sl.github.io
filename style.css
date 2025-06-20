@@ -1,0 +1,356 @@
+/* === GENERAL === */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* === TRANSITION === */
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* === NAVIGATION === */
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(181, 181, 181);
+  transition: width 0.3s;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+.logo {
+  font-size: 2rem;
+  cursor: default;
+}
+
+/* === HAMBURGER MENU === */
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+/* === SECTIONS === */
+section {
+  padding-top: 4vh;
+  margin: 0 8vw;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+  gap: 4rem;
+  height: 80%;
+}
+
+/* === PROFILE SECTION === */
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: auto;
+  margin-bottom: 6rem;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.75rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* === ICONS === */
+.icon {
+  cursor: pointer;
+  height: 2rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.15);
+  filter: brightness(1.2);
+}
+
+/* === BUTTONS === */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-weight: 600;
+  padding: 0.9rem 1.5rem;
+  border-radius: 2rem;
+  background-color: transparent;
+  color: rgb(53, 53, 53);
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn:hover {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* === SHARED BOX STYLE (No border) === */
+.details-container,
+.color-container,
+.article-container article,
+.contact-info-upper-container {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+.details-container:hover,
+.color-container:hover,
+.article-container article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* === ABOUT SECTION === */
+.about-containers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.about-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.text-container {
+  max-width: 700px;
+  text-align: justify;
+}
+
+/* === PROJECTS SECTION === */
+#projects {
+  position: relative;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+/* === SKILLS SECTION === */
+.experience-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.article-container article h3 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.article-container article img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* === CONTACT SECTION === */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  padding: 3rem 0;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* === FOOTER === */
+footer {
+  height: auto;
+  margin: 2rem 1rem;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: rgb(100, 100, 100);
+}
+
+
+
+
+
