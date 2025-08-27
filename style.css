@@ -334,6 +334,23 @@ section {
   margin-bottom: 0.15rem;
 }
 
+/* === TEXT CONTAINER - ABOUT ME DESCRIPTION === */
+.text-container {
+  max-width: 900px;
+  margin: 2.5rem auto 0 auto;
+  padding: 0 2rem;
+  text-align: justify;
+  background: #f7fbff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0,112,243,0.06);
+}
+
+.text-container p {
+  font-size: 1.13rem;
+  line-height: 1.8;
+  color: #222;
+}
+
 /* Responsivo para mobile */
 @media (max-width: 900px) {
   .about-horizontal-cards {
@@ -352,6 +369,10 @@ section {
     flex-direction: column;
     height: auto;
     gap: 1rem;
+  }
+  .text-container {
+    padding: 0 1rem;
+    max-width: 98vw;
   }
 }
 
