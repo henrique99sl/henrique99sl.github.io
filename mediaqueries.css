@@ -67,9 +67,38 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
   }
+
+  /* ABOUT ME CARDS - Medium screens */
+  .about-horizontal-cards {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .horizontal-card {
+    min-width: 220px;
+    max-width: 320px;
+  }
 }
 
 /* === SMALL SCREENS === */
+@media screen and (max-width: 900px) {
+  .about-horizontal-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    width: 100%;
+  }
+  .horizontal-card {
+    width: 95%;
+    max-width: 400px;
+    min-width: 0;
+  }
+  nav {
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
   #contact,
   footer {
@@ -147,5 +176,18 @@
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-}
 
+  /* ABOUT ME CARDS - Small screens */
+  .about-horizontal-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    width: 100%;
+  }
+  .horizontal-card {
+    width: 95%;
+    max-width: 380px;
+    min-width: 0;
+    padding: 1rem 0.5rem;
+  }
+}
