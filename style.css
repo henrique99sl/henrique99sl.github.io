@@ -278,12 +278,13 @@ section {
 /* === ABOUT SECTION === */
 .about-horizontal-cards {
   display: flex;
+  flex-direction: row;         /* <-- Garante horizontal sempre! */
   justify-content: center;
   align-items: stretch;
   gap: 2rem;
   margin: 0 auto 2rem auto;
   width: 100%;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;           /* <-- Não quebra para baixo! */
 }
 
 .horizontal-card {
@@ -291,9 +292,9 @@ section {
   border-radius: 1.5rem;
   border: 2px solid #0070f3;
   box-shadow: 0 6px 24px rgba(0,112,243,0.07);
+  width: 260px;                /* <-- Tamanho fixo para alinhamento */
   min-width: 260px;
-  max-width: 290px;
-  width: 100%;
+  max-width: 260px;
   min-height: 220px;
   display: flex;
   flex-direction: column;
@@ -340,6 +341,7 @@ section {
     align-items: center;
     gap: 1.2rem;
     width: 100%;
+    flex-wrap: wrap;
   }
   .horizontal-card {
     width: 95%;
