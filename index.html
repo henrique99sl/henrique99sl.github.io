@@ -15,9 +15,9 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#skills">Skills</a></li>
           <li><a href="#curriculum">Study Plans</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -32,9 +32,9 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#curriculum" onclick="toggleMenu()">Study Plans</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
@@ -225,41 +225,29 @@
         </div>
       </div>
     </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:henriqueslopes99@gmail.com">henriqueslopes99@gmail.com</a></p>
+    <section id="curriculum">
+      <p class="section__text__p1">Academic Details</p>
+      <h1 class="title">Study Plans</h1>
+      <div class="curriculum-container" style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; margin: 30px 0;">
+        <div class="curriculum-item" style="text-align:center; background:#f8fafc; border-radius:16px; box-shadow:0 2px 8px rgba(0,0,0,0.06); padding:24px; min-width:220px;">
+          <span style="font-size:2.5rem; display:block; margin-bottom:10px;">🎓</span>
+          <p style="font-weight:bold;">Bachelor's Degree</p>
+          <a href="./assets/licenciatura.pdf" download>
+            <button class="btn btn-color-2" style="margin-top:10px; font-size:1rem; display:flex; align-items:center; gap:8px;">
+              <span>Download</span>
+              <span style="font-size:1.3rem;">📥</span>
+            </button>
+          </a>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/henrique-lopes-643357316/">LinkedIn</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/git.png"
-            alt="GitHub icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://github.com/henrique99sl" target="_blank">GitHub</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/phone2.png"
-            alt="Phone icon"
-            class="icon contact-icon"
-          />
-          <p><a href="tel:+351916547658">+351 916 547 568</a></p>
+        <div class="curriculum-item" style="text-align:center; background:#f8fafc; border-radius:16px; box-shadow:0 2px 8px rgba(0,0,0,0.06); padding:24px; min-width:220px;">
+          <span style="font-size:2.5rem; display:block; margin-bottom:10px;">📜</span>
+          <p style="font-weight:bold;">Master's Degree</p>
+          <a href="./assets/mestrado.pdf" download>
+            <button class="btn btn-color-2" style="margin-top:10px; font-size:1rem; display:flex; align-items:center; gap:8px;">
+              <span>Download</span>
+              <span style="font-size:1.3rem;">📥</span>
+            </button>
+          </a>
         </div>
       </div>
     </section>
@@ -301,32 +289,44 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='#curriculum'"
+        onclick="location.href='#contact'"
       />
     </section>
-    <section id="curriculum">
-      <p class="section__text__p1">Academic Details</p>
-      <h1 class="title">Study Plans</h1>
-      <div class="curriculum-container" style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; margin: 30px 0;">
-        <div class="curriculum-item" style="text-align:center; background:#f8fafc; border-radius:16px; box-shadow:0 2px 8px rgba(0,0,0,0.06); padding:24px; min-width:220px;">
-          <span style="font-size:2.5rem; display:block; margin-bottom:10px;">🎓</span>
-          <p style="font-weight:bold;">Bachelor's Degree</p>
-          <a href="./assets/licenciatura.pdf" download>
-            <button class="btn btn-color-2" style="margin-top:10px; font-size:1rem; display:flex; align-items:center; gap:8px;">
-              <span>Download</span>
-              <span style="font-size:1.3rem;">📥</span>
-            </button>
-          </a>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:henriqueslopes99@gmail.com">henriqueslopes99@gmail.com</a></p>
         </div>
-        <div class="curriculum-item" style="text-align:center; background:#f8fafc; border-radius:16px; box-shadow:0 2px 8px rgba(0,0,0,0.06); padding:24px; min-width:220px;">
-          <span style="font-size:2.5rem; display:block; margin-bottom:10px;">📜</span>
-          <p style="font-weight:bold;">Master's Degree</p>
-          <a href="./assets/mestrado.pdf" download>
-            <button class="btn btn-color-2" style="margin-top:10px; font-size:1rem; display:flex; align-items:center; gap:8px;">
-              <span>Download</span>
-              <span style="font-size:1.3rem;">📥</span>
-            </button>
-          </a>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/henrique-lopes-643357316/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/git.png"
+            alt="GitHub icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/henrique99sl" target="_blank">GitHub</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone2.png"
+            alt="Phone icon"
+            class="icon contact-icon"
+          />
+          <p><a href="tel:+351916547658">+351 916 547 568</a></p>
         </div>
       </div>
     </section>
@@ -336,9 +336,9 @@
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#curriculum">Study Plans</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
