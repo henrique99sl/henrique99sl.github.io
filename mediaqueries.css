@@ -39,16 +39,12 @@
   }
   .section-container,
   #profile {
-    flex-direction: column !important;
-    display: flex !important;
+    flex-direction: column;
+    display: flex;
     gap: 2rem;
     padding: 0;
   }
-  .section__pic-container {
-    width: 220px !important;
-    height: 220px !important;
-    margin: 0 auto 1.5rem auto;
-  }
+  /* REMOVIDO: .section__pic-container tamanho fixo */
   .text-container {
     padding: 0 1rem;
     max-width: 98vw;
@@ -122,11 +118,7 @@
     gap: 1rem;
     padding: 1.2rem 0;
   }
-  .section__pic-container {
-    width: 180px !important;
-    height: 180px !important;
-    margin: 0 auto 1rem auto;
-  }
+  /* REMOVIDO: .section__pic-container tamanho fixo */
   .title {
     font-size: 1.6rem;
     margin-bottom: 1.2rem;
@@ -167,7 +159,7 @@
     font-size: 1rem;
   }
   .logo {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
     margin-bottom: 0.7rem;
     letter-spacing: 1px;
   }
@@ -179,11 +171,7 @@
     padding-top: 2vh;
     margin: 0 1vw;
   }
-  .section__pic-container {
-    width: 120px !important;
-    height: 120px !important;
-    margin: 0 auto 1rem auto;
-  }
+  /* REMOVIDO: .section__pic-container tamanho fixo */
   .title {
     font-size: 1.15rem;
     margin-bottom: 1rem;
@@ -202,8 +190,8 @@
   .horizontal-card,
   .article-container,
   .projects-grid {
-    max-width: 99vw !important;
-    width: 99vw !important;
+    max-width: 99vw;
+    width: 99vw;
   }
   .horizontal-card {
     min-width: 0;
