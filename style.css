@@ -54,7 +54,7 @@ a::after {
   bottom: -3px;
   width: 0%;
   height: 2px;
-  background: linear-gradient(90deg, #cdebf9 0%, #eaf7fb 100%);
+  background: linear-gradient(90deg, #a0d8f3 0%, #e3f6fb 100%);
   transition: width 0.3s;
 }
 
@@ -66,7 +66,7 @@ a:hover::after {
   font-size: 2rem;
   cursor: default;
   font-weight: 600;
-  color: #cdebf9;
+  color: #a0d8f3;
   letter-spacing: 2px;
 }
 
@@ -89,7 +89,7 @@ a:hover::after {
   cursor: pointer;
   border-radius: 10px;
   background: #f2f7ff;
-  box-shadow: 0 2px 6px rgba(205,235,249,0.07);
+  box-shadow: 0 2px 6px rgba(160,216,243,0.07);
   padding: 6px;
   transition: box-shadow 0.3s ease;
 }
@@ -98,7 +98,7 @@ a:hover::after {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background: linear-gradient(90deg, #cdebf9 0%, #eaf7fb 100%);
+  background: linear-gradient(90deg, #a0d8f3 0%, #e3f6fb 100%);
   transition: all 0.3s ease-in-out;
 }
 
@@ -109,7 +109,7 @@ a:hover::after {
   background: #fff;
   width: 260px;
   border-radius: 12px;
-  box-shadow: 0 4px 18px rgba(205,235,249,0.12);
+  box-shadow: 0 4px 18px rgba(160,216,243,0.12);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
@@ -129,7 +129,7 @@ a:hover::after {
 
 .menu-links a:hover {
   background: #f2f7ff;
-  color: #cdebf9;
+  color: #a0d8f3;
 }
 
 .menu-links li {
@@ -204,7 +204,7 @@ section {
 
 .section__text__p1 {
   text-align: center;
-  color: #cdebf9;
+  color: #a0d8f3;
 }
 
 .section__text__p2 {
@@ -231,12 +231,12 @@ section {
   cursor: pointer;
   height: 2rem;
   transition: transform 0.3s ease, filter 0.3s ease;
-  filter: grayscale(100%) brightness(0.8) drop-shadow(0 0 2px #cdebf9);
+  filter: grayscale(100%) brightness(0.8) drop-shadow(0 0 2px #a0d8f3);
 }
 
 .icon:hover {
   transform: scale(1.15);
-  filter: brightness(1.2) drop-shadow(0 0 8px #cdebf9);
+  filter: brightness(1.2) drop-shadow(0 0 8px #a0d8f3);
 }
 
 /* === BUTTONS === */
@@ -252,16 +252,16 @@ section {
   padding: 0.9rem 1.5rem;
   border-radius: 2rem;
   background: transparent;
-  color: #cdebf9;
-  border: 2px solid #cdebf9;
-  box-shadow: 0 2px 8px rgba(205,235,249,0.07);
+  color: #a0d8f3;
+  border: 2px solid #a0d8f3;
+  box-shadow: 0 2px 8px rgba(160,216,243,0.07);
   transition: background 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 .btn:hover {
-  background: #cdebf9;
+  background: #a0d8f3;
   color: #fff;
-  box-shadow: 0 4px 16px rgba(205,235,249,0.15);
+  box-shadow: 0 4px 16px rgba(160,216,243,0.15);
   transform: translateY(-2px) scale(1.03);
 }
 
@@ -273,8 +273,8 @@ section {
   background: #fff;
   border-radius: 1.5rem;
   padding: 1.5rem;
-  box-shadow: 0 6px 24px rgba(205,235,249,0.07);
-  border: 2px solid #cdebf9;
+  box-shadow: 0 6px 24px rgba(160,216,243,0.07);
+  border: 2px solid #a0d8f3;
   transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
@@ -282,11 +282,10 @@ section {
 .color-container:hover,
 .article-container article:hover {
   transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 12px 32px rgba(234,247,251,0.18);
-  border-color: #eaf7fb;
+  box-shadow: 0 12px 32px rgba(227,246,251,0.18);
+  border-color: #e3f6fb;
 }
 
-/* === ABOUT SECTION === */
 .about-horizontal-cards {
   display: flex;
   flex-direction: row;
@@ -301,8 +300,8 @@ section {
 .horizontal-card {
   background: #fff;
   border-radius: 1.5rem;
-  border: 2px solid #cdebf9;
-  box-shadow: 0 6px 24px rgba(205,235,249,0.07);
+  border: 2px solid #a0d8f3;
+  box-shadow: 0 6px 24px rgba(160,216,243,0.07);
   width: 260px;
   min-width: 260px;
   max-width: 260px;
@@ -318,8 +317,8 @@ section {
 
 .horizontal-card:hover {
   transform: translateY(-4px) scale(1.03);
-  box-shadow: 0 12px 32px rgba(234,247,251,0.18);
-  border-color: #eaf7fb;
+  box-shadow: 0 12px 32px rgba(227,246,251,0.18);
+  border-color: #e3f6fb;
 }
 
 .card-logo {
@@ -334,7 +333,7 @@ section {
 
 .card-title {
   font-weight: 600;
-  color: #cdebf9;
+  color: #a0d8f3;
   font-size: 1.1rem;
   margin-bottom: 0.2rem;
 }
@@ -353,7 +352,7 @@ section {
   text-align: justify;
   background: #f7fbff;
   border-radius: 1rem;
-  box-shadow: 0 2px 12px rgba(205,235,249,0.06);
+  box-shadow: 0 2px 12px rgba(160,216,243,0.06);
 }
 
 .text-container p {
@@ -403,13 +402,13 @@ section {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
-  box-shadow: 0 4px 14px rgba(205,235,249,0.09);
-  border: 2px solid #cdebf9;
+  box-shadow: 0 4px 14px rgba(160,216,243,0.09);
+  border: 2px solid #a0d8f3;
 }
 
 .project-title {
   margin: 1rem;
-  color: #cdebf9;
+  color: #a0d8f3;
   font-weight: 500;
 }
 
@@ -441,7 +440,7 @@ section {
 .article-container article h3 {
   margin-top: 0.5rem;
   font-size: 0.93rem;
-  color: #cdebf9;
+  color: #a0d8f3;
   word-break: break-word;
   white-space: normal;
   text-align: center;
@@ -452,7 +451,7 @@ section {
   width: 40px;
   height: 40px;
   object-fit: contain;
-  filter: drop-shadow(0 0 2px #cdebf9);
+  filter: drop-shadow(0 0 2px #a0d8f3);
 }
 
 /* === CONTACT SECTION === */
@@ -463,7 +462,7 @@ section {
   height: auto;
   padding: 3rem 0;
   background: #f7fbff;
-  border-top: 2px solid #cdebf9;
+  border-top: 2px solid #a0d8f3;
 }
 
 .contact-info-container {
@@ -473,7 +472,7 @@ section {
 }
 
 .contact-info-upper-container {
-  border: 2px solid #cdebf9;
+  border: 2px solid #a0d8f3;
   background: #fff;
   border-radius: 1rem;
   padding: 1rem 2rem;
@@ -484,14 +483,14 @@ footer {
   height: auto;
   margin: 2rem 1rem;
   text-align: center;
-  border-top: 2px solid #cdebf9;
+  border-top: 2px solid #a0d8f3;
   padding-top: 1rem;
   background: #f7fbff;
 }
 
 footer p {
   font-size: 0.9rem;
-  color: #cdebf9;
+  color: #a0d8f3;
   font-weight: 500;
 }
 
@@ -507,12 +506,12 @@ footer p {
   padding: 14px 18px;
   font-size: 1.25rem;
   border-radius: 10px;
-  border: 2px solid #cdebf9;
+  border: 2px solid #a0d8f3;
   background: #fff;
   color: #111;
   appearance: none;
   outline: none;
-  box-shadow: 0 2px 10px rgba(205,235,249,0.08);
+  box-shadow: 0 2px 10px rgba(160,216,243,0.08);
 }
 
 .custom-dropdown::after {
@@ -521,7 +520,7 @@ footer p {
   top: 50%;
   right: 16px;
   transform: translateY(-50%);
-  color: #cdebf9;
+  color: #a0d8f3;
   font-size: 1rem;
   pointer-events: none;
 }
