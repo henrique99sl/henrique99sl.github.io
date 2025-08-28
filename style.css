@@ -512,3 +512,22 @@ footer p {
   -moz-appearance: none;
   appearance: none;
 }
+
+
+.section__pic-container {
+  width: 400px;
+  height: 400px;
+  max-width: 100vw;
+  max-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+}
+
+.section__pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
