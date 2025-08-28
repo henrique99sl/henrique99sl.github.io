@@ -174,13 +174,24 @@ section {
   margin-bottom: 6rem;
 }
 
+/* === FOTO DE PERFIL FIXA (garantido) === */
 .section__pic-container {
   display: flex;
-  height: 400px;
   width: 400px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
   margin: auto 0;
 }
 
+.section__pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+/* === RESTANTE PROFILE SECTION === */
 .section__text {
   align-self: center;
   text-align: center;
@@ -278,13 +289,13 @@ section {
 /* === ABOUT SECTION === */
 .about-horizontal-cards {
   display: flex;
-  flex-direction: row;         /* <-- Garante horizontal sempre! */
+  flex-direction: row;         
   justify-content: center;
   align-items: stretch;
   gap: 2rem;
   margin: 0 auto 2rem auto;
   width: 100%;
-  flex-wrap: nowrap;           /* <-- Não quebra para baixo! */
+  flex-wrap: nowrap;           
 }
 
 .horizontal-card {
@@ -292,7 +303,7 @@ section {
   border-radius: 1.5rem;
   border: 2px solid #0070f3;
   box-shadow: 0 6px 24px rgba(0,112,243,0.07);
-  width: 260px;                /* <-- Tamanho fixo para alinhamento */
+  width: 260px;                
   min-width: 260px;
   max-width: 260px;
   min-height: 220px;
@@ -511,23 +522,4 @@ footer p {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-
-.section__pic-container {
-  width: 400px;
-  height: 400px;
-  max-width: 100vw;
-  max-height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto 0;
-}
-
-.section__pic-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1.5rem;
 }
